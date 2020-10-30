@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@700&family=Lato:wght@400;700&display=swap");
+
+header nav ul {
+  list-style-type: none;
+  align-items: center;
+  padding: 0;
+  margin: 3px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, auto) 1fr auto;
+  grid-gap: 25px;
+}
+
+header {
+  font-family: "Lato", sans-serif;
+}
+
+button {
+  text-transform: uppercase;
+  font-size: 12px;
+  border: 1px solid black;
+  background-color: #567b95;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  font-weight: 600;
+  margin: 0 5px;
+}
+
+.category {
+  text-transform: uppercase;
+}
+
+.logo {
+  font-family: "Grenze Gotisch", cursive;
+  font-size: 26px;
+  justify-self: center;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.mobile {
+  display: none;
+}
+
+.gray {
+  color: #ccc;
+}
+
+hr {
+  border-top: 1px solid #ddd;
+}
+
+@media (max-width: 700px) {
+  header nav ul {
+    grid-template-columns: auto 1fr auto;
+    margin: 10px 20px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .avatar {
+    display: block;
+  }
+
+  .mobile.account {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin: 10px;
+  }
+
+  .mobile.account > * {
+    margin: 3px;
+  }
+
+  .mobile.account > a {
+    text-decoration: none;
+    color: #326891;
+  }
+}
