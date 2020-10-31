@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,700&family=Grenze+Gotisch:wght@700&family=Lato:wght@400;700&family=Open+Sans:wght@300&family=PT+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,700&family=Grenze+Gotisch:wght@700&family=Lato:wght@400;700&family=Open+Sans:wght@300&family=PT+Serif&display=swap");
 
 * {
   font-family: "PT Serif", serif;
@@ -75,6 +75,10 @@ figcaption {
   font-size: 16px;
   margin-top: 10px;
   color: #666;
+}
+
+figcaption.video {
+  margin: 10px 0;
 }
 
 @media (max-width: 1200px) {
@@ -155,22 +159,24 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 3px;
-  align-self: center;
 }
 
 .theory-of-inflation h4,
-.theory-of-inflation figcaption {
+.theory-of-inflation figcaption,
+.theory-of-inflation .authors {
   margin: 0;
   grid-column: span 4;
 }
+
+.theory-of-inflation .authors {
+  font-size: 14px;
+}
 .theory-of-inflation section {
   display: contents;
-  background-image: url("inflation-720.png");
-  border: 1px solid red;
 }
 
 .theory-of-inflation p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
