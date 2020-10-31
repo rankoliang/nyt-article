@@ -66,6 +66,12 @@ figure {
   max-width: 1200px;
 }
 
+figure.telescope {
+  padding-top: 1rem;
+  max-width: 600px;
+  margin: 0;
+}
+
 figure > img {
   max-height: 675px;
   max-width: 100%;
@@ -82,7 +88,7 @@ figcaption.video {
 }
 
 @media (max-width: 1200px) {
-  figcaption {
+  .guth figcaption {
     margin: 10px 20px;
   }
 
@@ -183,6 +189,12 @@ section {
 .theory-of-inflation strong {
   font-size: 11px;
   margin-right: 5px;
+}
+
+iframe {
+  width: 600px;
+  height: 315px;
+  max-width: 100%;
 }
 
 @media (max-width: 1000px) {
