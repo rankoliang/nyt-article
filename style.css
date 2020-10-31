@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,700&family=Grenze+Gotisch:wght@700&family=Lato:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,700&family=Grenze+Gotisch:wght@700&family=Lato:wght@400;700&family=PT+Serif&display=swap');
+
+* {
+  font-family: 'PT Serif', serif
+}
 
 header nav ul {
   list-style-type: none;
@@ -50,14 +54,31 @@ hr {
   border-top: 1px solid #ddd;
 }
 
-article > * {
+article > section {
   max-width: 600px;
 }
 
-article > img {
-  max-height: 65vh;
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  max-width: 1200px;
+}
+
+figure > img {
+  max-height: 675px;
   max-width: 100vw;
-  align-self: center;
+}
+
+figcaption {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #666;
+}
+
+figcaption small {
+  color: #888;
 }
 
 article {
@@ -71,16 +92,6 @@ h1 {
   font-style: italic;
   font-family: "Alegreya", serif;
   font-size: 42px;
-}
-
-figcaption {
-  font-size: 16px;
-  margin-top: 10px;
-  color: #666;
-}
-
-figcaption small {
-  color: #888;
 }
 
 a {
@@ -124,6 +135,10 @@ section {
 .px-2 {
   padding-left: 4px;
   padding-right: 4px;
+}
+
+.content {
+  font-size: 18px;
 }
 
 @media (max-width: 1000px) {
