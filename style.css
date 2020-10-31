@@ -30,6 +30,27 @@ button {
   margin: 0 5px;
 }
 
+.comments {
+  width: 328px;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-baseline {
+  align-items: baseline;
+}
+
 .category {
   text-transform: uppercase;
 }
@@ -54,8 +75,24 @@ hr {
   border-top: 1px solid #ddd;
 }
 
-article > section {
+article > section, footer {
   max-width: 600px;
+}
+
+.flex-columns {
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100% - 40px;
+  max-width: 600px;
+  margin: 20px;
+}
+
+footer a {
+  font-size: 11px;
 }
 
 figure {
@@ -158,7 +195,8 @@ section {
 }
 
 .content {
-  font-size: 18px;
+  line-height: 1.5rem;
+  font-size: 20px;
 }
 
 .theory-of-inflation {
